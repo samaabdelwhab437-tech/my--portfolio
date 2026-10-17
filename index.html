@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سما إيهاب محمد | معرض أعمالي</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background: #faf7fb;
+            color: #302536;
+            line-height: 1.9;
+        }
+
+        header {
+            background: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px #00000008;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            color: #8e5a82;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #302536;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #8e5a82;
+        }
+
+        .hero {
+            padding: 90px 8%;
+            min-height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f3e5f0, #faf7fb);
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: clamp(30px, 5vw, 48px);
+            color: #8e5a82;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            color: #8e5a82;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #8e5a82;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            margin-left: 8px;
+        }
+
+        .btn:hover {
+            background: #704367;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #8e5a82;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .about {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 5px 25px #8e5a8210;
+            border: 1px solid #f0e5ef;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #8e5a82;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+            background: #f3e5f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 22px;
+            background: #302536;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 60px 7%;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">سما إيهاب</div>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من أنا</a>
+            <a href="#skills">مهاراتي</a>
+            <a href="#projects">أعمالي</a>
+            <a href="#contact">تواصل معي</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">مرحبًا بكم في موقعي الشخصي</span>
+
+                <h1>أنا سما إيهاب محمد محمد سالمان</h1>
+
+                <p>
+                    طالبة نظم معلومات، مهتمة بالبرمجة وتطوير المواقع
+                    والتكنولوجيا، وأسعى دائمًا إلى تعلم مهارات جديدة
+                    وتطوير قدراتي العلمية والعملية.
+                </p>
+
+                <a href="#about" class="btn">تعرف عليّ</a>
+                <a href="#contact" class="btn">تواصل معي</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">من أنا؟</h2>
+
+            <div class="about">
+                <p>
+                    أنا سما إيهاب محمد محمد سالمان، طالبة بالفرقة الرابعة
+                    بمعهد نظم المعلومات، قسم النظم والبرمجة.
+                    أحب مجال التكنولوجيا وأسعى إلى تطوير نفسي في
+                    البرمجة وتصميم المواقع، واكتساب الخبرات التي
+                    تساعدني على بناء مستقبل مهني ناجح.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">مهاراتي واهتماماتي</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>💻 البرمجة</h3>
+                    <p>الاهتمام بتعلم البرمجة وتطوير مهارات حل المشكلات.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🌐 تصميم المواقع</h3>
+                    <p>إنشاء صفحات ويب باستخدام HTML و CSS.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 تطبيقات الحاسب</h3>
+                    <p>تطوير مهارات استخدام Word و Excel.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔐 الأمن السيبراني</h3>
+                    <p>التعرف على أساسيات أمن المعلومات وحماية البيانات.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">أعمالي ومشروعاتي</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>موقعي الشخصي</h3>
+                    <p>
+                        تصميم موقع Portfolio للتعريف بنفسي
+                        وعرض معلوماتي واهتماماتي.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>مشروعات البرمجة</h3>
+                    <p>
+                        أسعى إلى تنفيذ مشروعات عملية لتطبيق
+                        ما أتعلمه في مجال البرمجة.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="section-title">تواصل معي</h2>
+
+            <p>
+                يسعدني التواصل وتبادل الخبرات والفرص
+                المتعلقة بالتكنولوجيا والبرمجة.
+            </p>
+
+            <p>الاسم: سما إيهاب محمد محمد سالمان</p>
+            <p>التخصص: نظم المعلومات والبرمجة</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | سما إيهاب محمد محمد سالمان</p>
+    </footer>
+
+</body>
+</html>
